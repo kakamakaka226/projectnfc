@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Музыкальная кнопка</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="container">
+        <button id="musicButton" class="music-button">
+            <img src="https://avatars.mds.yandex.net/i?id=257a0d0d549f735523f486d2a186bd8bffaf7c5d-5173466-images-thumbs&n=13" alt="Кнопка" /> <!-- Замените на путь к вашей картинке -->
+        </button>
+        <br>
+        <h1 href="https://t.me/NFC_SoundTag">
+            @NFC_Soundtag
+        </h1>
+        <audio id="audio" src="lv_0_20250331201836_31032025.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Высота равна высоте окна браузера */
+    margin: 0;
+    background-color: #f0f0f0; /* Цвет фона страницы */
+}
+
+.container {
+    text-align: center; /* Центрируем текст внутри контейнера */
+}
+
+.music-button {
+    border: none; /* Убираем рамку у кнопки */
+    background: none; /* Убираем фоновый цвет */
+    cursor: pointer; /* Указываем, что кнопка кликабельна */
+}
+
+.music-button img {
+    width: 400px; /* Ширина изображения кнопки */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+}
+</style>

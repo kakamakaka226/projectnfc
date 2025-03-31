@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative; /* Для абсолютного позиционирования кнопки */
+    height: 100vh; /* Высота контейнера равна высоте окна браузера */
+    text-align: center; 
+}
+
+.music-button {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 50%; /* Смещение по вертикали */
+    left: 50%; /* Смещение по горизонтали */
+    transform: translate(-50%, -50%); /* Центрируем кнопку по середине */
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.music-button img {
+    width: 10000px; /* Установите желаемую ширину */
+    height: 10000px; /* Установите желаемую высоту */
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.music-button img:hover {
+    transform: scale(1.05);
+}
+
+.text {
+    margin-top: 10px; 
+    font-size: 24px; 
+    color: #333; 
+}
+
